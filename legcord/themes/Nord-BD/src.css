@@ -1,0 +1,226 @@
+﻿/**
+ * @name Nord (Maple Mono)
+ * @version 1.1.0
+ * @description A Nord-themed Discord theme using Maple Mono
+ * @website https://github.com/Daggy1234/Nord
+ */
+
+/* =========================
+   Font: Maple Mono
+   ========================= */
+
+@font-face {
+    font-family: "Maple Mono";
+    src: url("https://cdn.jsdelivr.net/gh/subframe7536/maple-font/woff2/MapleMono-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* =========================
+   Root Variables
+   ========================= */
+
+:root {
+    --nord-primary: #2e3440;
+    --nord-secondary: #3b4252;
+    --nord-secondary-alt: #396cb335;
+    --nord-tertiary: #000720;
+    --nord-accent-color: #d8dee9;
+    --nord-input-box: #396cb335;
+    --nord-frost-blue: #88c0d0;
+    --nord-frost-dark-blue: #5e81ac;
+
+    --nord-scrollbar-track: var(--nord-primary);
+    --nord-scrollbar-thumb: var(--nord-secondary);
+}
+
+/* =========================
+   Font Override
+   ========================= */
+
+.theme-dark,
+.theme-light,
+html,
+body,
+code,
+pre,
+.hljs {
+    font-family: "Maple Mono", Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+/* =========================
+   Light Mode Warning
+   ========================= */
+
+html.theme-light::before {
+    content: "This is a dark mode theme. Maybe find a good light mode theme lol";
+    font-family: "Maple Mono", sans-serif;
+    color: var(--nord-primary);
+    text-align: center;
+    position: absolute;
+    z-index: 10001;
+    left: 0;
+    right: 0;
+}
+
+/* =========================
+   Discord Variables
+   ========================= */
+
+.theme-dark {
+    --background-primary: var(--nord-primary);
+    --background-secondary: var(--nord-secondary);
+    --background-secondary-alt: var(--nord-secondary-alt);
+    --background-tertiary: var(--nord-tertiary);
+    --background-accent: var(--nord-frost-blue);
+    --header-primary: var(--nord-accent-color);
+    --interactive-active: var(--nord-accent-color);
+    --channeltextarea-background: var(--nord-input-box);
+    --scrollbar-auto-thumb: var(--nord-secondary);
+    --scrollbar-auto-track: var(--nord-primary);
+}
+
+/* =========================
+   Main Chat = Navbar Color
+   ========================= */
+
+.theme-dark .chat-2ZfjoI,
+.theme-dark .content-1jQy2l,
+.theme-dark .messagesWrapper-RpOMA3,
+.theme-dark .scroller-kQBbkU {
+    background-color: var(--background-secondary) !important;
+}
+
+/* Input box contrast */
+.theme-dark .channelTextArea-1FufC0 {
+    background-color: var(--background-secondary-alt) !important;
+}
+
+/* =========================
+   Columns / Containers
+   ========================= */
+
+.theme-dark .container-1D34oG { background-color: var(--background-primary); }
+.theme-dark .root-1gCeng { background-color: var(--background-primary); }
+.theme-dark .footer-2gL1pp { background-color: var(--background-tertiary); }
+
+/* =========================
+   Popups / Autocomplete
+   ========================= */
+
+.theme-dark .headerNormal-T_seeN { background-color: var(--background-tertiary); }
+.theme-dark .body-3iLsc4,
+.theme-dark .footer-1fjuF6 { background-color: var(--background-secondary); }
+
+.theme-dark .autocomplete-1vrmpx { background-color: var(--background-tertiary); }
+.theme-dark .selected-1Tbx07 { background-color: var(--background-secondary); }
+
+/* =========================
+   Icons / Assets
+   ========================= */
+
+.theme-dark svg { color: #5c6b80; }
+.theme-dark .premiumIcon-1rDbWQ { color: #ff73fa; }
+.theme-dark .ownerIcon-2NH9FM { color: #faa61a; }
+
+/* =========================
+   Mentions / Replies
+   ========================= */
+
+.theme-dark .mentioned-xhSam7:before { background-color: #6ba9ff; }
+.theme-dark .mentioned-xhSam7 { background-color: var(--nord-input-box); }
+
+.theme-dark .repliedMessage-VokQwo {
+    background-color: var(--background-secondary-alt);
+    padding: 0.5em;
+    width: fit-content;
+}
+
+.repliedMessage-VokQwo:before { border-color: white; }
+
+/* =========================
+   Code Blocks
+   ========================= */
+
+.theme-dark code,
+.theme-dark .inline,
+.theme-dark .hljs {
+    background-color: var(--nord-input-box);
+}
+
+/* =========================
+   Embeds / Quotes
+   ========================= */
+
+.theme-dark .embed-IeVjo5 { border-color: var(--background-primary); }
+.theme-dark .blockquoteContainer-U5TVEi {
+    background-color: var(--background-secondary-alt);
+}
+
+/* =========================
+   Status Colors
+   ========================= */
+
+.theme-dark rect[mask="url(#svg-mask-status-dnd)"] { fill: #bf616a; }
+.theme-dark rect[mask="url(#svg-mask-status-online)"] { fill: #a3be8c; }
+.theme-dark rect[mask="url(#svg-mask-status-idle)"] { fill: #ebcb8b; }
+.theme-dark rect[mask="url(#svg-mask-status-online-mobile)"] { fill: #a3be8c; }
+
+/* =========================
+   Unread / Notifications
+   ========================= */
+
+.theme-dark .numberBadge-2s8kKX {
+    background-color: var(--nord-frost-dark-blue) !important;
+}
+
+.theme-dark .isUnread-3Ef-o9 { border-color: var(--nord-frost-blue); }
+.theme-dark .unreadPill-2HyYtt {
+    fill: var(--nord-frost-blue);
+    background-color: var(--nord-frost-blue);
+}
+
+.theme-dark .newMessagesBar-265mhP,
+.theme-dark .unreadMentionsBar-1VrBNe {
+    background-color: var(--nord-frost-blue);
+}
+
+/* =========================
+   Context Menus / Folders
+   ========================= */
+
+.thin-1ybCId { background-color: var(--background-secondary); }
+
+.theme-dark .item-2hkk8m {
+    background-color: #81a1c1;
+}
+
+/* =========================
+   Bot Tags
+   ========================= */
+
+.theme-dark .botTagRegular-2HEhHi {
+    transition: 0.5s;
+    background: rgba(114, 137, 218, 0.1);
+    color: #7289da;
+}
+
+.theme-dark .botTagRegular-2HEhHi:hover {
+    background: #7289da;
+    color: #fff;
+}
+
+/* =========================
+   Nord Highlight.js
+   ========================= */
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: #2e3440;
+    color: #d8dee9;
+}
+
+/* (rest of your highlight.js rules remain unchanged) */
+

@@ -1,0 +1,80 @@
+/**
+ * @name Nord (Maple Mono)
+ * @version 1.1.0
+ * @description A Nord-themed Discord theme using Maple Mono
+ * @website https://github.com/Daggy1234/Nord
+ */
+
+/* =========================
+   Font: Maple Mono
+   ========================= */
+
+@font-face {
+    font-family: "Maple Mono";
+    src: url("https://cdn.jsdelivr.net/gh/subframe7536/maple-font/woff2/MapleMono-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* =========================
+   Root Variables
+   ========================= */
+
+:root {
+    --nord-primary: #2e3440;
+    --nord-secondary: #2e3440;
+    --nord-secondary-alt: #396cb335;
+    --nord-tertiary: #000720;
+    --nord-accent-color: #d8dee9;
+    --nord-input-box: #396cb335;
+    --nord-frost-blue: #88c0d0;
+    --nord-frost-dark-blue: #5e81ac;
+
+    --nord-scrollbar-track: var(--nord-primary);
+    --nord-scrollbar-thumb: var(--nord-secondary);
+}
+
+/* =========================
+   Font Override
+   ========================= */
+
+.theme-dark,
+html,
+body,S
+code,
+pre,
+.hljs {
+    font-family: "Maple Mono", Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+/* Target the main content area more aggressively */
+main[class*="chatContent"] {
+    background-color: #2e3440 !important;
+}
+
+/* The scrollable message list */
+[class*="scroller"][class*="content"] {
+    background-color: #2e3440 !important;
+}
+
+/* All chat containers */
+[aria-label="Messages"] {
+    background-color: #2e3440 !important;
+}
+
+/* */
+
+.theme-dark {
+    --background-primary: var(--nord-primary);
+    --background-secondary: var(--nord-secondary);
+    --background-secondary-alt: var(--nord-secondary-alt);
+    --background-tertiary: var(--nord-tertiary);
+    --background-accent: var(--nord-frost-blue);
+    --header-primary: var(--nord-accent-color);
+    --interactive-active: var(--nord-accent-color);
+    --channeltextarea-background: var(--nord-input-box);
+    --scrollbar-auto-thumb: var(--nord-secondary);
+    --scrollbar-auto-track: var(--nord-primary);
+}
+
+
