@@ -1,8 +1,8 @@
 # My personal dot files for my nord rice.
 
-![image of application launcher infront of ide backdrop](examples/exampleOne.png)
-![ide next to audio visualizer and linux terminal](examples/exampleTwo.png)
-![spicetify with compfy nord theme installed](examples/exampleThree.png)
+![image of application launcher infront of ide backdrop](examples/exampleOne1.png)
+![ide next to audio visualizer and linux terminal](examples/exampleTwo2.png)
+![spicetify with compfy nord theme installed](examples/exampleThree3.png)
 
 assets use charecters included in maple mono font, make sure to include in system font.
 
