@@ -1,0 +1,67 @@
+/**
+ * @name Tokyo Night Theme
+ * @author legcord-theme-switcher
+ * @description Tokyo Night color scheme for Discord
+ */
+
+:root {
+    --tokyo-bg: #1a1b26;
+    --tokyo-bg-dark: #16161e;
+    --tokyo-bg-highlight: #292e42;
+    --tokyo-terminal-black: #15161e;
+    --tokyo-fg: #c0caf5;
+    --tokyo-fg-dark: #a9b1d6;
+    --tokyo-fg-gutter: #3b4261;
+    --tokyo-comment: #565f89;
+    --tokyo-cyan: #7dcfff;
+    --tokyo-blue: #7aa2f7;
+    --tokyo-blue-dark: #3d59a1;
+    --tokyo-magenta: #bb9af7;
+    --tokyo-purple: #9d7cd8;
+    --tokyo-red: #f7768e;
+    --tokyo-orange: #ff9e64;
+    --tokyo-yellow: #e0af68;
+    --tokyo-green: #9ece6a;
+    --tokyo-teal: #1abc9c;
+}
+
+.theme-dark, .theme-light {
+    --background-primary: var(--tokyo-bg);
+    --background-secondary: var(--tokyo-bg-dark);
+    --background-secondary-alt: var(--tokyo-bg-highlight);
+    --background-tertiary: var(--tokyo-bg-dark);
+    --background-accent: var(--tokyo-blue);
+    --background-floating: var(--tokyo-bg-dark);
+    --background-modifier-hover: rgba(41, 46, 66, 0.16);
+    --background-modifier-active: rgba(41, 46, 66, 0.24);
+    --background-modifier-selected: rgba(41, 46, 66, 0.32);
+    --background-modifier-accent: rgba(122, 162, 247, 0.16);
+    --channeltextarea-background: var(--tokyo-bg-dark);
+    --deprecated-card-bg: var(--tokyo-bg-dark);
+    --deprecated-card-editable-bg: var(--tokyo-bg);
+    --deprecated-store-bg: var(--tokyo-bg);
+    --deprecated-quickswitcher-input-background: var(--tokyo-bg-dark);
+    --deprecated-text-input-bg: var(--tokyo-bg);
+    --deprecated-text-input-border: var(--tokyo-fg-gutter);
+    --deprecated-text-input-border-hover: var(--tokyo-blue);
+    --deprecated-text-input-border-disabled: var(--tokyo-bg-highlight);
+    --deprecated-text-input-prefix: var(--tokyo-fg);
+    --text-normal: var(--tokyo-fg);
+    --text-muted: var(--tokyo-comment);
+    --text-link: var(--tokyo-cyan);
+    --interactive-normal: var(--tokyo-fg);
+    --interactive-hover: var(--tokyo-fg);
+    --interactive-active: var(--tokyo-fg);
+    --interactive-muted: var(--tokyo-comment);
+    --header-primary: var(--tokyo-fg);
+    --header-secondary: var(--tokyo-fg-dark);
+    --channels-default: var(--tokyo-fg-dark);
+    --info-warning-foreground: var(--tokyo-yellow);
+    --info-danger-foreground: var(--tokyo-red);
+    --scrollbar-thin-thumb: var(--tokyo-bg-highlight);
+    --scrollbar-thin-track: transparent;
+    --scrollbar-auto-thumb: var(--tokyo-bg-highlight);
+    --scrollbar-auto-track: var(--tokyo-bg-dark);
+    --brand-experiment: var(--tokyo-blue);
+    --brand-experiment-hover: var(--tokyo-blue-dark);
+}

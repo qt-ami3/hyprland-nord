@@ -1,0 +1,64 @@
+/*Tokyo Night theme for wofi*/
+
+* {
+font-family: "Maple Mono", monospace;
+}
+
+window {
+    background-color: #1A1B26;
+}
+
+#input {
+margin: 5px;
+border-radius: 0px;
+border: none;
+background-color: #24283B;
+color: #C0CAF5;
+}
+
+#inner-box {
+background-color: #24283B;
+}
+
+#outer-box {
+margin: 2px;
+padding: 10px;
+background-color: #24283B;
+}
+
+#scroll {
+margin: 5px;
+}
+
+#text {
+padding: 4px;
+color: #C0CAF5;
+}
+
+#entry:{
+background-color: #292E42;
+}
+
+#text:selected {
+background: transparent;
+}
+
+#input {
+    margin: 5px;
+    border-radius: 0px;
+    border: none;
+    background-color: #24283B;
+    color: #C0CAF5;
+    outline: none;
+    box-shadow: none;
+}
+
+#input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#entry:selected {
+    background-color: #7AA2F7;
+    color: #1A1B26;
+}

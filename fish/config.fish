@@ -9,6 +9,10 @@ set -g fish_greeting '"don'\''t listen to everybody, you should pick very specif
 bind pagedown accept-autosuggestion
 bind pageup accept-autosuggestion
 
-/home/aval/appImages/shell-mommy/shell-mommy.sh
-
 starship init fish | source
+
+fish_add_path /home/aval/.spicetify
+
+# OpenClaw Completion
+source "/home/aval/.openclaw/completions/openclaw.fish"
+export PATH="$HOME/.local/bin:$PATH"

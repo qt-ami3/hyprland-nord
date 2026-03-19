@@ -1,0 +1,7 @@
+font_family maple mono
+font_size 12
+background #2e3440
+foreground #d8dee9
+
+# Start Fish shell and Fastfetch on Kitty startup
+shell /usr/bin/fish --command "fastfetch && exec fish"
