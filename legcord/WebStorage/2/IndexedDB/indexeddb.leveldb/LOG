@@ -1,6 +1,0 @@
-2026/03/18-00:02:04.379 b9fd Creating DB /home/aval/.config/legcord/WebStorage/2/IndexedDB/indexeddb.leveldb since it was missing.
-2026/03/18-00:02:04.382 b9fd Reusing MANIFEST /home/aval/.config/legcord/WebStorage/2/IndexedDB/indexeddb.leveldb/MANIFEST-000001
-2026/03/18-00:11:37.314 b989 Level-0 table #5: started
-2026/03/18-00:11:37.317 b989 Level-0 table #5: 30750 bytes OK
-2026/03/18-00:11:37.319 b989 Delete type=0 #3
-2026/03/18-00:11:37.320 b989 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
